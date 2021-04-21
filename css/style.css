@@ -138,14 +138,14 @@ h6 {
   top: 44%;
   left: 0;
   right: 0;
-  height: 0.03em;
+  height: 0.07em;
 }
 
 ._cross:before {
   left: 44%;
   top: 0;
   bottom: 0;
-  width: 0.03em;
+  width: 0.07em;
 }
 
 ._position-left-top {
@@ -202,7 +202,7 @@ h6 {
 }
 
 ._border_red {
-  border-color: #EC2510;
+  border: 1px solid #EC2510 !important;
 }
 
 .header {
@@ -321,8 +321,39 @@ h6 {
   border-radius: 5px;
 }
 
-.date__timer-day {
-  padding: 28px 41px;
+.date__timer-countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-family: CoFoSans-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 66px;
+  letter-spacing: 0.02em;
+  color: #EC2510;
+}
+
+.date__timer-number {
+  padding-top: 28px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.date__timer-points {
+  padding-top: 28px;
+}
+
+.date__timer-text {
+  display: block;
+  font-family: CoFoSans-Regular;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1A252C;
+  text-transform: uppercase;
+  padding-bottom: 28px;
 }
 
 .info {
@@ -549,6 +580,8 @@ h6 {
 }
 
 .nomination__item {
+  border-left: none;
+  border-top: none;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,10 +589,13 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #E2E2E2;
 }
 
 .nomination__item-description {
   grid-column: 1/3;
+  border-left: none;
+  border-top: none;
 }
 
 .nomination__item-description p {
@@ -606,6 +642,45 @@ h6 {
   background-color: #EC2510;
 }
 
+.nomination__nominees-items {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+}
+
+.nomination__nominees-items :hover {
+  cursor: pointer;
+}
+
+.nomination__nominees-text {
+  font-family: CoFoSans-Bold;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #EC2510;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-right: 16px;
+}
+
+.nomination__nominees-block {
+  width: 45px;
+  height: 45px;
+  background-color: #EC2510;
+  border: 1px solid #EC2510;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +699,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.social__development :hover {
+  cursor: pointer;
 }
 
 .social__development-img {
@@ -652,6 +731,10 @@ h6 {
 
 .social__vacancy {
   padding-left: 20px;
+}
+
+.social__vacancy :hover {
+  cursor: pointer;
 }
 
 .social__vacancy-block {
@@ -700,8 +783,65 @@ h6 {
   padding-right: 32px;
 }
 
-.footer__social-block img {
-  padding-right: 24px;
+.footer__social-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-link-youtube {
+  -webkit-mask-image: url("../image/youtube.svg");
+          mask-image: url("../image/youtube.svg");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #cfcfcf;
+  margin-right: 24px;
+}
+
+.footer__social-link-youtube:hover {
+  background: #ec2510;
+}
+
+.footer__social-link-facebook {
+  -webkit-mask-image: url("../image/facebook.svg");
+          mask-image: url("../image/facebook.svg");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #cfcfcf;
+  margin-right: 24px;
+}
+
+.footer__social-link-facebook:hover {
+  background: #ec2510;
+}
+
+.footer__social-link-vk {
+  -webkit-mask-image: url("../image/vk.svg");
+          mask-image: url("../image/vk.svg");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #cfcfcf;
+  margin-right: 24px;
+}
+
+.footer__social-link-vk:hover {
+  background: #ec2510;
+}
+
+.footer__social-link-instagram {
+  -webkit-mask-image: url("../image/instagram.svg");
+          mask-image: url("../image/instagram.svg");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #cfcfcf;
+}
+
+.footer__social-link-instagram:hover {
+  background: #ec2510;
 }
 
 .footer__text {
