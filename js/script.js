@@ -16,7 +16,7 @@ testWebP(function (support) {
 
 const blockNominationItem = [...document.getElementsByClassName('_nomination_blocks_hoverjs')]
 
-blockNominationItem.forEach((e) => {
+blockNominationItem.forEach(function(e) {
     e.addEventListener('mouseover', function(e) {
         this.classList.add('_border_red')
         this.querySelector('.nomination__nominees-items').style.display = 'flex'
@@ -30,7 +30,7 @@ blockNominationItem.forEach((e) => {
 
 const blockSocial = [...document.getElementsByClassName('_social_block_hoverjs')]
 
-blockSocial.forEach((e) => {
+blockSocial.forEach(function (e) {
     e.addEventListener('mouseover', function(e) {
         this.classList.add('_border_red')
         
@@ -79,6 +79,6 @@ function getTimeRemaining(endtime) {
     const timeinterval = setInterval(updateClock, 1000)
   }
   
-  const deadline = '2020-12-31'
+//   const deadline = '2020-12-31'
   const deadline = new Date(Date.parse(new Date()) + 23 * 24 * 60 * 60 * 1000)
   initializeClock('countdown', deadline)
